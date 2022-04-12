@@ -1,0 +1,40 @@
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+.btn:active {
+  opacity: 1;
+}
+
+.btn.default {
+  color: #606266;
+  border: 1px solid #dcdfe6;
+  background-color: #fff;
+}
+
+.btn.primary {
+  color: #fff;
+  border: 1px solid #409eff;
+  background-color: #409eff;
+}
+
+.btn.danger {
+  color: #fff;
+  border: 1px solid #f56c6c;
+  background-color: #f56c6c;
+}
+
+.multFnComp .btn {
+  margin-right: 20px;
+}
+
+.multFnComp .btn:last-child {
+  margin-right: 0;
+}
