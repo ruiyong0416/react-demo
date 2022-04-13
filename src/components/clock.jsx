@@ -1,11 +1,14 @@
 import { createRoot } from 'react-dom/client'
 import './clock.Module.css'
 
+/** 
+ * @description 根root
+ */
+let clockEl = null
 /**
  * @description 使用定时器配合react-dom的render每一秒更新一次
  * bad!
  */
-let clockEl = null
 function tick() {
   const element = (
     <div className="clock">
