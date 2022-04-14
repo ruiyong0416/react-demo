@@ -1,0 +1,35 @@
+.condition h3,
+.condition .controler {
+  margin-bottom: 12px;
+}
+
+.condition .controler button {
+  margin-right: 8px;
+}
+
+.condition .controler button:last-child {
+  margin-right: 0;
+}
+
+.condition .content .box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.box.success {
+  color: #67c23a;
+  background-color: #f0f9eb;
+}
+
+.box.warning {
+  color: #e6a23c;
+  background-color: #fdf6ec;
+}
+
+.box.fail {
+  color: #f56c6c;
+  background-color: #fef0f0;
+}

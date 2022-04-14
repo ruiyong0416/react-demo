@@ -4,6 +4,8 @@ import jsxExpression from './components/jsxExpression'
 import { SignleFnComp } from './components/singleComp'
 import { MultFnComp } from './components/multComp'
 import { EventComp } from './components/event'
+import { ConditionComp } from './components/conditionRender'
+import { ListComp } from './components/list'
 
 function renderLayout(key) {
   switch(key) {
@@ -19,6 +21,12 @@ function renderLayout(key) {
     // 事件处理
     case 'eventComp':
       return <EventComp />
+    // 条件渲染
+    case 'conditionComp':
+      return <ConditionComp />
+    // 列表渲染
+    case 'listComp':
+      return <ListComp />
     default: 
       return (<div>我是默认的</div>)
   }
@@ -41,7 +49,7 @@ export default function App() {
     <div className="app">
       <h3 className="title">欢迎尝试使用react</h3>
       { renderClock('advance') }
-      { renderLayout('eventComp') }
+      { renderLayout('listComp') }
     </div>
   )
 }

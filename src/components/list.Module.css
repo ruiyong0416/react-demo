@@ -1,0 +1,10 @@
+.list h3,
+.list .controler {
+  margin-bottom: 12px;
+}
+
+.list-wrap .item {
+  font-size: 13px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ebeef5;
+}
