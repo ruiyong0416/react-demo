@@ -6,6 +6,7 @@ import { MultFnComp } from './components/multComp'
 import { EventComp } from './components/event'
 import { ConditionComp } from './components/conditionRender'
 import { ListComp } from './components/list'
+import { FormComp } from './components/form'
 
 function renderLayout(key) {
   switch(key) {
@@ -27,6 +28,9 @@ function renderLayout(key) {
     // 列表渲染
     case 'listComp':
       return <ListComp />
+    // 表单
+    case 'formComp':
+      return <FormComp />
     default: 
       return (<div>我是默认的</div>)
   }
@@ -49,7 +53,7 @@ export default function App() {
     <div className="app">
       <h3 className="title">欢迎尝试使用react</h3>
       { renderClock('advance') }
-      { renderLayout('listComp') }
+      { renderLayout('formComp') }
     </div>
   )
 }
