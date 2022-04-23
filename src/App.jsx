@@ -7,6 +7,7 @@ import { EventComp } from './components/event'
 import { ConditionComp } from './components/conditionRender'
 import { ListComp } from './components/list'
 import { FormComp } from './components/form'
+import { BoilingVerdictComp } from './components/boilingVerdict'
 
 function renderLayout(key) {
   switch(key) {
@@ -31,6 +32,9 @@ function renderLayout(key) {
     // 表单
     case 'formComp':
       return <FormComp />
+    // 状态提升
+    case 'boilingVerdictComp':
+      return <BoilingVerdictComp />
     default: 
       return (<div>我是默认的</div>)
   }
@@ -53,7 +57,7 @@ export default function App() {
     <div className="app">
       <h3 className="title">欢迎尝试使用react</h3>
       { renderClock('advance') }
-      { renderLayout('formComp') }
+      { renderLayout('boilingVerdictComp') }
     </div>
   )
 }
